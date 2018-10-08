@@ -1,13 +1,15 @@
 import java.util.logging.SocketHandler;
 
+
 public class Main {
     public static void main(String[] args) {
-        
-        // Methods in Java
-        /*
-        calculateScore(true, 800, 5, 100);
-        calculateScore(true, 400, 5, 30);
-        */
+
+
+        /*// Methods in Java (see bottom file)
+        // calculateScore(true, 800, 5, 100);
+        // calculateScore(false, 400, 5, 30);
+        int playerScore = calculateHighScorePosition(300);
+        displayHighScorePosition("daniel", playerScore);*/
         /*
         // Code Blocks and if then else control statement
         int score = 500;
@@ -147,13 +149,38 @@ public class Main {
         System.out.println("Hello World");
         */
     }
-    /*
-    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+
+    //    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+//        if (gameOver == true) {
+//            int finalScore = score + (levelCompleted * bonus);
+//            System.out.println("Your final score was " + finalScore);
+//        }
+//    }
+    /*public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
         if (gameOver == true) {
             int finalScore = score + (levelCompleted * bonus);
             System.out.println("Your final score was " + finalScore);
+            return finalScore;
+        } else {
+            return -1;
         }
+    }*/
+    /*public static void displayHighScorePosition(String playerName, int position) {
+        System.out.println(playerName + " managed to get into position " + position + " on the high score table");
     }
-    */
+
+    public static int calculateHighScorePosition(int score) {
+        int playerScore;
+        if (score > 1000) {
+            return 1;
+        } else if (score > 500 && score < 1000) {
+            return 2;
+        } else if (score > 100 && score < 500) {
+            return 3;
+        } else {
+            return 4;
+        }
+    }*/
+
 }
 
