@@ -2,12 +2,17 @@ import java.util.logging.SocketHandler;
 
 public class Main {
     public static void main(String[] args) {
-        boolean gameOver = true;
+        
+        // Methods in Java
+        /*
+        calculateScore(true, 800, 5, 100);
+        calculateScore(true, 400, 5, 30);
+        */
         /*
         // Code Blocks and if then else control statement
         int score = 500;
-        int levelCompleted = 5;
-        int bonus = 100;
+        int levelCompleted = 8;
+        int bonus = 200;
         if (score == 5000) {
             System.out.println("Your score is 5000");
         } else if (score < 1000) {
@@ -15,12 +20,28 @@ public class Main {
         } else {
             System.out.println("Got here");
         }
+        boolean gameOver = true;
+
         if (gameOver == true){
             int finalScore = score + (levelCompleted * bonus);
             System.out.println("Your final score was " + finalScore);
         }
+        boolean newGameOver = true;
+        score = 10000;
+        levelCompleted = 8;
+        bonus = 200;
+        if (newGameOver == true){
+            int finalScore = score + (levelCompleted * bonus);
+            System.out.println("Your final score was " + finalScore);
+        }
         // cannot read this code block
-        int savedFinalScore = finalScore;
+        // int savedFinalScore = finalScore;
+
+        // Print out a second score on the screen with the following
+        // score set to 10000
+        // levelCompleted set to 8
+        // bonus set to 200
+        // But make sure the first printout above still displays as well
         */
         /*
         // Operators
@@ -126,5 +147,13 @@ public class Main {
         System.out.println("Hello World");
         */
     }
+    /*
+    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+        if (gameOver == true) {
+            int finalScore = score + (levelCompleted * bonus);
+            System.out.println("Your final score was " + finalScore);
+        }
+    }
+    */
 }
 
