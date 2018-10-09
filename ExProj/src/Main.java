@@ -1,10 +1,40 @@
 import java.util.logging.SocketHandler;
-
+import java.util.HashMap;
+import java.util.Map;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) {  v
+        HashMap<Integer, Integer> map = new HashMap<>();
+        print(map);
+        map.put("vishal", 10);
+        map.put("sachin", 30);
+        map.put("vaibhav", 20);
 
+        System.out.println("Size of map is:- " + map.size());
 
+        print(map);
+        if (map.containsKey("vishal"))
+        {
+            Integer a = map.get("vishal");
+            System.out.println("value for key \"vishal\" is:- " + a);
+        }
+
+        map.clear();
+        print(map);
+    }
+
+    public static void print(Map<String, Integer> map)
+    {
+        if (map.isEmpty())
+        {
+            System.out.println("map is empty");
+        }
+
+        else
+        {
+            System.out.println(map);
+        }
+    }
         /*// Methods in Java (see bottom file)
         // calculateScore(true, 800, 5, 100);
         // calculateScore(false, 400, 5, 30);
@@ -148,7 +178,7 @@ public class Main {
         // My First App
         System.out.println("Hello World");
         */
-    }
+//    }
 
     //    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
 //        if (gameOver == true) {
@@ -181,6 +211,5 @@ public class Main {
             return 4;
         }
     }*/
-
 }
 
