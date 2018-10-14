@@ -1,3 +1,4 @@
+import org.jetbrains.annotations.Contract;
 import sun.awt.geom.AreaOp;
 
 import javax.naming.ldap.UnsolicitedNotification;
@@ -8,7 +9,7 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("10k at 10% interest: " + calculateInterest(1000, 10));
+        //   System.out.println("10k at 10% interest: " + calculateInterest(1000, 10));
 //        for(int i = 0; i < 5; i++){
 //            System.out.println("Loop: " + i + " hello");
 //        }
@@ -21,37 +22,35 @@ public class Main {
 
         // How would you modify the for loop above to do the same thing as
         // shown but to start from 8% and work back to 2%
-//        for(int j = 8; j > 1;j--) {
+//        for (int j = 8; j > 1; j--) {
 //            System.out.println("10k at " + j + " interest: " + String.format("%.2f", calculateInterest(10000, j)));
 //        }
 
         // Create a for statement using any range of numbers
         // Determine if the number is a prime number using the isPrime method
-        // if it is a prime number, print it out and increment a count of the
+        // if it is a prime number, print it out AND increment a count of the
         // number of prime numbers found
         // if that count is 3 exit for the loop
         // hint: use the break; statement to exit
-        int n = 1;
-        isPrime(1);
-        if (isPrime = true) {
-            System.out.println(n);
-        }
-    }
-    public static double calculateInterest(double amount, double interestRate) {
-        return (amount * (interestRate / 100));
-    }
-
+           }
     public static boolean isPrime(int n) {
         if(n == 1) {
             return false;
         }
-        for(int i = 2; i <= n/2; i++) {
-            if(n % 1 == 0) {
+        for(int i = 2; i <= n / 2; i ++) {
+            if(n % i == 0) {
                 return false;
             }
         }
         return true;
     }
+}
+//    public static double calculateInterest(double amount, double interestRate) {
+//        return (amount * (interestRate / 100));
+//    }
+
+
+
         /*
         // if else
         int value = 1;
@@ -260,7 +259,7 @@ public class Main {
         */
 //    }
 
-    //    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+//    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
 //        if (gameOver == true) {
 //            int finalScore = score + (levelCompleted * bonus);
 //            System.out.println("Your final score was " + finalScore);
@@ -291,5 +290,4 @@ public class Main {
             return 4;
         }
     }*/
-}
 
