@@ -9,48 +9,73 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        //   System.out.println("10k at 10% interest: " + calculateInterest(1000, 10));
-//        for(int i = 0; i < 5; i++){
-//            System.out.println("Loop: " + i + " hello");
-//        }
-        // Using the statement, call the calculateInterest method with
-        // the amount of 10000 with an interestRate of 2, 3, 4, 5, 6, 7, 8
-        // and print the results to the console window.
-//        for(int i = 2; i < 9;i++) {
-//            System.out.println("10k at " + i + " interest: " + String.format("%.2f", calculateInterest(10000, i)));
-//        }
-
-        // How would you modify the for loop above to do the same thing as
-        // shown but to start from 8% and work back to 2%
-//        for (int j = 8; j > 1; j--) {
-//            System.out.println("10k at " + j + " interest: " + String.format("%.2f", calculateInterest(10000, j)));
-//        }
-
-        // Create a for statement using any range of numbers
-        // Determine if the number is a prime number using the isPrime method
-        // if it is a prime number, print it out AND increment a count of the
-        // number of prime numbers found
-        // if that count is 3 exit for the loop
-        // hint: use the break; statement to exit
-           }
-    public static boolean isPrime(int n) {
-        if(n == 1) {
-            return false;
+        int count = 0;
+        while (count != 6) {
+            System.out.println("Count value is " + count);
+            count++;
         }
-        for(int i = 2; i <= n / 2; i ++) {
-            if(n % i == 0) {
-                return false;
+        int number = 4;
+        int finishNumber = 20;
+        while (number <= finishNumber) {
+            number++;
+            if (!isEvenNumber(number)) {
+                continue;
+            } else {
+                System.out.println("Even number:" + number);
             }
         }
-        return true;
+        // Create a method called isEvenNumber that takes a parameter of type int
+        // Its purpose is to determine if the argument passed to the method is
+        // an even number or not
+        // return true if an even number, otherwise return false
+
+    }
+    public static boolean isEvenNumber(int n) {
+        if (n % 2 == 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
-//    public static double calculateInterest(double amount, double interestRate) {
-//        return (amount * (interestRate / 100));
-//    }
 
+            /*
+            // For Statement
+            System.out.println("10k at 10% interest: " + calculateInterest(1000, 10));
+            for (int i = 0; i < 5; i++) {
+                System.out.println("Loop: " + i + " hello");
+            }
+// Using the statement, call the calculateInterest method with
+// the amount of 10000 with an interestRate of 2, 3, 4, 5, 6, 7, 8
+// and print the results to the console window.
+            for (int i = 2; i < 9; i++) {
+                System.out.println("10k at " + i + " interest: " + String.format("%.2f", calculateInterest(10000, i)));
+            }
 
+// How would you modify the for loop above to do the same thing as
+// shown but to start from 8% and work back to 2%
+            for (int j = 8; j > 1; j--) {
+                System.out.println("10k at " + j + " interest: " + String.format("%.2f", calculateInterest(10000, j)));
+            }
 
+// Create a for statement using any range of numbers
+// Determine if the number is a prime number using the isPrime method
+// if it is a prime number, print it out AND increment a count of the
+// number of prime numbers found
+// if that count is 3 exit for the loop
+// hint: use the break; statement to exit
+            int count = 0;
+            for (int i = 50; i < 200; i++) {
+                if (isPrime(i) == true) {
+                    System.out.println(i);
+                    System.out.println("It is a prime number");
+                    count++;
+                    if (count == 3) {
+                        break;
+                    }
+                }
+            }
+*/
         /*
         // if else
         int value = 1;
@@ -289,5 +314,23 @@ public class Main {
         } else {
             return 4;
         }
-    }*/
+    }
+
+    public static boolean isPrime(int n) {
+        if (n == 1) {
+            return false;
+
+        }
+        for (int i = 2; i <= (long) Math.sqrt(n); i++) {
+            System.out.println(i);
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+
+    public static double calculateInterest(double amount, double interestRate) {
+        return (amount * (interestRate / 100));
+    }
+    */
 
