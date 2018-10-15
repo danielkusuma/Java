@@ -1,6 +1,5 @@
 import org.jetbrains.annotations.Contract;
 import sun.awt.geom.AreaOp;
-
 import javax.naming.ldap.UnsolicitedNotification;
 import java.sql.SQLOutput;
 import java.util.logging.SocketHandler;
@@ -9,27 +8,135 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-        int count = 0;
-        while (count != 6) {
-            System.out.println("Count value is " + count);
-            count++;
+
+    }
+    static int[] solve(int a0, int a1, int a2, int b0, int b1, int b2)
+    {
+        // Complete this function
+        int alexScore = 0;
+        int bobScore = 0;
+
+        if(a0 != b0) {
+            switch (a0 > b0)
+            {
+                case true:
+                    alexScore++;
+                    break;
+                case false:
+                    bobScore++;
+                    break;
+                default:
+                    break;
+            }
+            
         }
-        int number = 4;
+
+        if(a1 != b1)
+            switch (a1 > b1)
+            {
+                case true:
+                    alexScore++;
+                    break;
+                case false:
+                    bobScore++;
+                    break;
+                default:
+                    break;
+            }
+
+        if(a2 != b2)
+            switch (a2 > b2)
+            {
+                case true:
+                    alexScore++;
+                    break;
+                case false:
+                    bobScore++;
+                    break;
+                default:
+                    break;
+            }
+
+        int[] scoreArr = { alexScore, bobScore };
+
+        return scoreArr;
+    }
+}
+        /*
+        // Classes
+//        Car mazda = new Car();
+//        mazda.setModel("3");
+//        System.out.println("Model is " + mazda.getModel());
+        */
+        /*
+        // Constructor
+        // Create new class for a bank account
+        // Create fields for the account number, balance, customer name, email and phone number
+        // Create getters and setters for each field
+        // Create two additional methods
+        // 1. To allow the customer to deposit funds ( this should increment the balance field).
+        // 2. To allow the customer to withdraw funds, This should deduct from the balance field,
+        // but not allow the withdrawal to complete if their are insufficient funds,
+        // You will want to create various code in the Main class ( the one created by IntelliJ) to
+        // confirm your code is working.
+        // Add some System.out.println's in the two methods above as well
+
+//        Bank DanBank = new Bank();
+//        System.out.println(DanBank.getAccNumber());
+//        DanBank.deposit(5000);
+//        DanBank.withdraw(100);
+//        DanBank.withdraw(4902);
+        // Create a new class VIPCustomer
+        // It should have 3 fields name, credit limit, and email address.
+        // create 3 constructors
+        // 1st constructor empty should call the constructor with 3 parameters with default values
+        // 2nd constructor should pass on the 2 values it receives and add a default value for the 3rd
+        // 3rd constructor should save all fields.
+        // create getters only for this using code generation of intellij as setters wont be needed
+        // test and confirm it works
+//        VipCustomer vip2 = new VipCustomer();
+//        System.out.println(vip2.getName());
+//        System.out.println(vip2.getCreditLimit());
+//
+//        VipCustomer vip1 = new VipCustomer("defaultName0", 1000, "default1@mail.com");
+//        System.out.println(vip1.getName());
+//
+//        VipCustomer vip3 = new VipCustomer(100, "default3@mail.com");
+//        System.out.println(vip3.getName());
+//        System.out.println(vip3.getEmailAddress());
+        */
+        /*
+        // while loop
+        int count = 0;
+//        while (count != 6) {
+//            System.out.println("Count value is " + count);
+//            count++;
+//        }
+        int number = 1;
         int finishNumber = 20;
         while (number <= finishNumber) {
             number++;
-            if (!isEvenNumber(number)) {
-                continue;
-            } else {
-                System.out.println("Even number:" + number);
+            if (isEvenNumber(number) == true)
+            {
+                count++;
+                System.out.println("Even number:" + number + " Total Number:" + count);
+            } else if (number == 5) {
+                break;
             }
         }
+        */
         // Create a method called isEvenNumber that takes a parameter of type int
         // Its purpose is to determine if the argument passed to the method is
         // an even number or not
         // return true if an even number, otherwise return false
 
-    }
+        // Modify the while code above
+        // Make it also record the total number of even numbers it has found
+        // and break once 5 are found
+        // and at the end, display the total number of even numbers found
+
+    /*
+    // while loop
     public static boolean isEvenNumber(int n) {
         if (n % 2 == 0) {
             return true;
@@ -37,8 +144,7 @@ public class Main {
             return false;
         }
     }
-}
-
+    */
             /*
             // For Statement
             System.out.println("10k at 10% interest: " + calculateInterest(1000, 10));
