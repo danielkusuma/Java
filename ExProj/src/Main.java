@@ -8,60 +8,16 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-
-    }
-    static int[] solve(int a0, int a1, int a2, int b0, int b1, int b2)
-    {
-        // Complete this function
-        int alexScore = 0;
-        int bobScore = 0;
-
-        if(a0 != b0) {
-            switch (a0 > b0)
-            {
-                case true:
-                    alexScore++;
-                    break;
-                case false:
-                    bobScore++;
-                    break;
-                default:
-                    break;
-            }
-            
+    // Debugger
+        StringUtilities utils = new StringUtilities();
+        StringBuilder sb = new StringBuilder();
+        while (sb.length() < 10) {
+            utils.addChar(sb, 'a');
         }
-
-        if(a1 != b1)
-            switch (a1 > b1)
-            {
-                case true:
-                    alexScore++;
-                    break;
-                case false:
-                    bobScore++;
-                    break;
-                default:
-                    break;
-            }
-
-        if(a2 != b2)
-            switch (a2 > b2)
-            {
-                case true:
-                    alexScore++;
-                    break;
-                case false:
-                    bobScore++;
-                    break;
-                default:
-                    break;
-            }
-
-        int[] scoreArr = { alexScore, bobScore };
-
-        return scoreArr;
+        System.out.println(sb);
     }
 }
+
         /*
         // Classes
 //        Car mazda = new Car();
