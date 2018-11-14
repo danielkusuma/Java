@@ -8,17 +8,17 @@ import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
-
-    }
+//        Car mazda = new Car();
+//        mazda.setModel("3");
+//        System.out.println("Model is " + mazda.getModel());
+        }
 }
 
 
 
         /*
         // Classes
-//        Car mazda = new Car();
-//        mazda.setModel("3");
-//        System.out.println("Model is " + mazda.getModel());
+
         */
         /*
         // Constructor
