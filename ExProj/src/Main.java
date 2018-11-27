@@ -13,9 +13,6 @@ public class Main {
 //        System.out.println("Model is " + mazda.getModel());
         }
 }
-
-zx
-
         /*
         // Classes
 
