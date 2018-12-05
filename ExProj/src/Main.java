@@ -13,10 +13,9 @@ mazda.setModel("3");
 System.out.println("Model is " + mazda.getModel());
         }
 }
-        /*
+
         // Classes
 
-        */
         /*
         // Constructor
         // Create new class for a bank account
